@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GeoPaw - Explore the World with Pets</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo-container">
+                <h1 class="logo-text">GeoPaw</h1>
+            </div>
+            <nav class="nav-links">
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul id="navMenu">
+                    <li>
+                        <a href="#home"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#products"
+                            ><i class="fas fa-shopping-bag"></i> Products</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#locations"
+                            ><i class="fas fa-globe"></i> Locations</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#about"><i class="fas fa-user"></i> About</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="content">
+            <!-- Home Section with Video -->
+            <section class="video-ad" id="home">
+                <h2>Discover Our World</h2>
+                <div class="video-container">
+                    <video id="adVideo" autoplay muted playsinline loop>
+                        <source src="advertisement.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="sound-control">
+                        <button id="soundBtn">
+                            <i class="fas fa-volume-mute"></i>
+                        </button>
+                    </div>
+                </div>
+                <p class="video-caption">
+                    Explore our premium pet travel services across the globe
+                </p>
+            </section>
+
+            <!-- Products Section -->
+            <section class="products-section" id="products">
+                <div class="section-title">
+                    <h2>Our Products</h2>
+                    <p>High quality items for your furry friends</p>
+                </div>
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="products/product1.png" alt="Product 1" />
+                            <span class="discount-badge">-20%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>GeoPaw</h3>
+                            <p class="product-desc">
+                                Comfortable and adjustable collar for pets
+                            </p>
+
+                            <div class="price-container">
+                                <span class="original-price">₱1299.99</span>
+                                <span class="current-price">₱1040.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="products/product2.png" alt="Product 2" />
+                            <span class="discount-badge">-15%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>GeoPaw Charger</h3>
+                            <p class="product-desc">
+                                Reliable and portable charger for GeoPaw
+                            </p>
+
+                            <div class="price-container">
+                                <span class="original-price">₱699.99</span>
+                                <span class="current-price">₱595.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="products/product3.png" alt="Product 3" />
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>GeoPaw PetCharm</h3>
+                            <p class="product-desc">
+                                Cute and stylish charm accessory for pet collars
+                            </p>
+
+                            <div class="price-container">
+                                <span class="original-price">₱199.99</span>
+                                <span class="current-price">₱140.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="products/product4.png" alt="Product 4" />
+                        </div>
+                        <div class="product-info">
+                            <h3>GeoPaw PetBeacon</h3>
+                            <p class="product-desc">
+                                LED light and beeper for pet visibility in the
+                                dark, designed for collar attachment
+                            </p>
+
+                            <div class="price-container">
+                                <span class="current-price">₱499.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Location Section -->
+            <section
+                class="location-section"
+                id="locations"
+                style="background-color: #4eaaff"
+            >
+                <div class="section-title">
+                    <h2>Our Location</h2>
+                    <p>Visit us at SM CDO Uptown</p>
+                </div>
+                <div class="location-container">
+                    <!-- Image Row -->
+                    <div class="image-row">
+                        <div class="shop-image">
+                            <img src="shop.png" alt="GeoPaw Physical Store" />
+                        </div>
+                        <div class="map-image">
+                            <img src="maps.png" alt="GeoPaw on Google Maps" />
+                        </div>
+                    </div>
+
+                    <!-- Address Row -->
+                    <div class="address-row">
+                        <h3>GeoPaw Store</h3>
+                        <p>2nd Floor, SM CDO Uptown, Claro M. Recto Avenue</p>
+                        <p>
+                            Cagayan de Oro, Misamis Oriental, Philippines 9000
+                        </p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> (088) 123-4567</p>
+                            <p>
+                                <i class="fas fa-clock"></i> Open 10AM-9PM Daily
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section class="about-section" id="about">
+                <div class="section-title">
+                    <h2>About Us</h2>
+                    <p>Learn more about GeoPaw and our team</p>
+                </div>
+
+                <!-- GeoPaw About -->
+                <div class="about-container">
+                    <div class="about-content">
+                        <h3>Our Story</h3>
+                        <p class="about-subtitle">
+                            Innovating pet travel since 2025
+                        </p>
+                        <p class="about-text">
+                            GeoPaw makes pet travel safer and easier with
+                            durable, pet-friendly GPS products. We rigorously
+                            test our technology in real-world conditions to keep
+                            your furry friends connected wherever adventure
+                            takes you.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img
+                            src="geopaw-about.png"
+                            alt="GeoPaw Products in Use"
+                        />
+                    </div>
+                </div>
+
+                <!-- CEO About -->
+                <div class="about-container reverse">
+                    <div class="about-content">
+                        <h3>Our Founder</h3>
+                        <p class="about-subtitle">
+                            Leading the way in pet tech innovation
+                        </p>
+                        <p class="about-text">
+                            GeoPaw was founded by <strong>Norway Mangorangca</strong>, a 3rd-year
+                            BSIT student from Opol Community College, along with
+                            his colleagues Raven Añabieza, Dave Joseph S. Baa,
+                            and Ian Vincent Madayag. Their passion for
+                            technology and pet safety drives the company's
+                            mission to create innovative solutions for pet
+                            owners.
+                        </p>
+                        <p class="about-text">
+                            Inspired by the bond between pets and their humans,
+                            the team combines technical expertise with a deep
+                            understanding of pet care to develop reliable and
+                            cutting-edge pet safety products.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="ceo.png" alt="Jane Doe, CEO of GeoPaw" />
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
